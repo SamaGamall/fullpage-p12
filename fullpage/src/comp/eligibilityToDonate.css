@@ -1,0 +1,36 @@
+.feeds-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.feed-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.feed-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.feed-content {
+  padding: 20px;
+}
+
+.feed-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.feed-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
