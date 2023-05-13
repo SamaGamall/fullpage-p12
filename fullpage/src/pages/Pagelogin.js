@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink  } from "react-router-dom";
 import Login from'../comp/Login';
-
+import Navbarinside from '../comp/Navbarinside';
 
 
 
@@ -9,7 +9,7 @@ import Login from'../comp/Login';
 const Pagelogin = () => {
   return (
     <>
-    
+    <Navbarinside />
     <Login />
     </>
   );

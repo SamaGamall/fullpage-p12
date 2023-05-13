@@ -1,7 +1,7 @@
 
 import { Link, NavLink  } from "react-router-dom";
 import './Navbarinside.css';
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from '@mui/icons-material/Person'
 
 import MenuIcon from '@mui/icons-material/Menu';
 

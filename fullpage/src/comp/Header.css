@@ -6,24 +6,26 @@
 
 header{
   width:100%;
-  height:90px;
+  height: 10vh;
   background: white;
-  display: inline-block;
-  border-color:white ;
+
   align-items: center;
   text-decoration: none;
   position: fixed;
   z-index: 1;
-  
+
 }
-.nav-bar{
+.nav-bar{  
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+    height: 12vh;
 font-family: Montserrat,sans-serif;
 font-size: 1rem;
   font-weight: 600; 
   background-color:white;
-
+  
   overflow: hidden;
   text-align: left;
+
 }
 .logo-area img{
   
@@ -37,11 +39,7 @@ width: 50px;
   color: black;
   
 }
-header nav{
-  padding:0em 0em 0em 0em ;
-  
-  
-}
+
 .btn1-1{
   position: relative;
   background-color:#e42313;

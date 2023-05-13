@@ -8,6 +8,31 @@ const MainComponant = () => {
 
 
   {/* Start About  */}
+
+  <div className=" grid main-header ">
+    <section className="main-header__desc">
+      <h2>
+        Blood <span>Donate</span> <br />
+        To Save a Life
+      </h2>
+      <p>
+        Connecting volunteer blood donors with patients with minutes at
+        <span>zero cost.</span>
+      </p>
+      <a className="button " href="#">
+        {" "}
+        Find Blood Now
+      </a>
+      {/* <p>your blood can bring a smile in another person's face.</p> */}
+    </section>
+    <section className="main-header__img">
+      <div className="animations">
+        <img src="./images/header.svg" alt="header animation" />
+      </div>
+    </section>
+  </div>
+  {/* End header */}
+  {/* Start About  */}
   <section id="about" className="about grid">
     <div className="about__container">
       <h2>About BloodDonate Connect</h2>
@@ -22,6 +47,8 @@ const MainComponant = () => {
       </a>
     </div>
   </section>
+
+
   {/* End About  */}
   {/* Start Acceptable */}
   <section id="blood" className="acceptable">

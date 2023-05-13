@@ -2,7 +2,7 @@ body {
   color: #1a202c;
   background-color: hsl(214, 32%, 91%); 
   position: relative;
-
+  overflow-x: hidden;
   
 }  
 .container1-2 .row{
