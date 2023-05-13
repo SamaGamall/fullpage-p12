@@ -220,11 +220,13 @@ padding-top: 6rem;
   overflow-x: hidden;
   width: 45%;
   margin-right: 5%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   vertical-align: top;
   float: left;
 }
-
+.overflow{
+  
+}
 .acceptable__header--menu {
   display: flex;
   flex-wrap: wrap;
@@ -531,13 +533,15 @@ overflow-x: hidden;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    overflow: hidden;
   }
   .main-header__desc {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    margin: 2em 0;
+    margin: 3em 0;
     height: 200px;
+
   }
   .main-header__desc h2 {
     text-align: center;
@@ -553,6 +557,7 @@ overflow-x: hidden;
   }
   .main-header__desc a {
     margin: auto;
+    margin-left: 6em;
   }
   .main-header__img {
     -webkit-box-ordinal-group: 1;

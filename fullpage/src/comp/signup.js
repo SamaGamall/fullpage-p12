@@ -5,6 +5,7 @@ import "./signup.css";
 import { Link, NavLink } from "react-router-dom";
 import axios from "axios";
 
+
 const validationSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
   password: Yup.string().required("Required"),
@@ -28,21 +29,21 @@ const Signup = () => {
   };
   return (
     <div>
-      <Formik
-        initialValues={{
-          email: "",
-          password: "",
-          name: "",
-          address: "",
-          phoneNumber: "",
-          age: "",
-          gender: "",
-          photo: null,
-        }}
-        validationSchema={validationSchema}
-        onSubmit={onSubmit}
-      >
-        {({ isSubmitting, errors, touched }) => (
+    <Formik
+  initialValues={{
+    email: "",
+    password: "",
+    name: "",
+    address: "",
+    phoneNumber: "",
+    age: "",
+    gender: "",
+    photo: null,
+  }}
+  validationSchema={validationSchema}
+  onSubmit={onSubmit}
+>
+  {({ isSubmitting, isValid, dirty }) => (
           <Form>
             <img
               src="./images/smartphone (1).png"
@@ -114,10 +115,15 @@ const Signup = () => {
               <ErrorMessage name="photo" />
             </div>
             <Link to="/">
-              <button className="btn8" type="submit" disabled={isSubmitting}>
-                Submit
-              </button>
-            </Link>
+  <button
+    className="btn8"
+    type="submit"
+    disabled={isSubmitting || !isValid || !dirty}
+  >
+    Submit
+  </button>
+</Link>
+
           </Form>
         )}
       </Formik>
