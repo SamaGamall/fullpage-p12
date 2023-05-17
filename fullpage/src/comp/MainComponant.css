@@ -350,7 +350,7 @@ overflow-x: hidden;
   width: 80%;
   font-size: 1.1em;
   line-height: 1.6;
-  margin: 0 auto 1em;
+
   color: var(--text-color);
 }
 
@@ -557,7 +557,7 @@ overflow-x: hidden;
   }
   .main-header__desc a {
     margin: auto;
-    margin-left: 6em;
+    margin-left: 0em;
   }
   .main-header__img {
     -webkit-box-ordinal-group: 1;
